@@ -1,0 +1,25 @@
+@import url(../vendor/normalize.css);
+
+@import url(../blocks/page.css);
+
+@import url(../blocks/header.css);
+
+@import url(../blocks/lead.css);
+
+@import url(../blocks/intro.css);
+
+@import url(../blocks/photo-grid.css);
+
+@import url(../blocks/place-kiev.css);
+
+@import url(../blocks/place-gales.css);
+
+@import url(../blocks/place-barea.css);
+
+@import url(../blocks/place-burundi.css);
+
+@import url(../blocks/place-elqui.css);
+
+@import url(../blocks/cover.css);
+
+@import url(../blocks/footer.css);

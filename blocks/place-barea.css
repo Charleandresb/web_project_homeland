@@ -1,0 +1,245 @@
+.place-barea {
+  display: grid;
+  grid-template-areas:
+    "title subtitle"
+    "image paragraph"
+    "button paragraph";
+  padding: 35px 0 0;
+  width: 984px;
+  height: 725px;
+  gap: 48px 40px;
+  margin: auto;
+  grid-template-columns: 460px 484px;
+}
+
+@media screen and (max-width: 768px) {
+  .place-barea {
+    padding: 46px 0 0;
+    width: 720px;
+    height: 634px;
+    gap: 48px 28px;
+    grid-template-columns: 340px 352px;
+    grid-template-rows: auto 340px auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place-barea {
+    display: block;
+    padding: 36px 0 0;
+    width: 320px;
+    height: 1174px;
+  }
+}
+
+.place-barea__title {
+  grid-area: title;
+  color: white;
+  font-size: 72px;
+  line-height: 76px;
+  font-weight: 900;
+  max-width: 584px;
+  max-height: 152px;
+  margin: 0 0 17px;
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+@media screen and (max-width: 768px) {
+  .place-barea__title {
+    font-size: 42px;
+    line-height: 46px;
+    width: 340px;
+    max-height: 92px;
+    margin: 0 0 2px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place-barea__title {
+    font-size: 32px;
+    line-height: 35px;
+    max-width: 288px;
+    max-height: 70px;
+    margin: 0 auto;
+  }
+}
+
+.place-barea__subtitle {
+  grid-area: subtitle;
+  margin: 76px 0 0;
+  max-height: 45px;
+}
+
+@media screen and (max-width: 768px) {
+  .place-barea__subtitle {
+    margin: 0;
+    max-width: 352px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place-barea__subtitle {
+    padding: 10px 0 20px;
+    max-width: 288px;
+    margin: 0 auto;
+  }
+}
+
+.place-barea__subtitle-artist {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.place-barea__subtitle-name {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 8px 0 0;
+}
+
+.place-barea__image {
+  grid-area: image;
+  max-width: 460px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .place-barea__image {
+    max-width: 340px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place-barea__image {
+    max-width: 320px;
+  }
+}
+
+.place-barea__paragraph {
+  grid-area: paragraph;
+  max-width: 484px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .place-barea__paragraph {
+    max-width: 352px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place-barea__paragraph {
+    max-width: 288px;
+    margin: 0 auto;
+  }
+}
+
+.place-barea__paragraph-up {
+  color: white;
+  font-size: 18px;
+  line-height: 29.34px;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .place-barea__paragraph-up {
+    /*Font size alternativo para dar con las dimenciones del bloque*/
+    font-size: 15.8px;
+    line-height: 26.08px;
+    max-width: 352px;
+    max-height: 312px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place-barea__paragraph-up {
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 288px;
+    max-height: 390px;
+  }
+}
+
+.place-barea__paragraph-down {
+  color: white;
+  font-size: 18px;
+  line-height: 29.34px;
+  font-weight: 400;
+  margin: 17px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .place-barea__paragraph-down {
+    font-size: 16px;
+    line-height: 26.08px;
+    margin: 20px 0 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place-barea__paragraph-down {
+    margin: 0 0 6px;
+  }
+}
+
+.place-barea__button-content {
+  width: 355px;
+  height: 48px;
+  margin: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .place-barea__button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 288px;
+    margin: 0 auto;
+  }
+}
+
+.place-barea__button-background {
+  grid-area: button;
+  border-radius: 4px;
+  max-width: 355px;
+  margin: 0;
+  width: 355px;
+  height: 48px;
+  cursor: pointer;
+  background-color: #0278fe;
+  border: none;
+}
+
+@media screen and (max-width: 320px) {
+  .place-barea__button-background {
+    max-width: 288px;
+    margin: 0 auto;
+    width: 288px;
+  }
+}
+
+.place-barea__button-background:hover {
+  background-color: #0063d2;
+}
+
+.place-barea__button-paragraph {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .place-barea__button-paragraph {
+    font-size: 14px;
+    max-width: 245px;
+    max-height: 17px;
+    margin: 0 auto;
+  }
+}

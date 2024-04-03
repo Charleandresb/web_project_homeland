@@ -1,0 +1,249 @@
+.place-gales {
+  display: grid;
+  grid-template-areas:
+    "title subtitle"
+    "image paragraph"
+    "button paragraph";
+  padding: 80px 0 0;
+  width: 984px;
+  height: 756px;
+  gap: 48px 40px;
+  margin: auto;
+  grid-template-columns: 460px 484px;
+}
+
+@media screen and (max-width: 768px) {
+  .place-gales {
+    padding: 31px 0 0;
+    width: 720px;
+    height: 632px;
+    gap: 0 28px;
+    grid-template-columns: 340px 352px;
+    grid-template-rows: auto 388px auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place-gales {
+    display: block;
+    padding: 16px 0 0;
+    width: 320px;
+    height: 1198px;
+  }
+}
+
+.place-gales__title {
+  grid-area: title;
+  color: white;
+  font-size: 72px;
+  line-height: 76px;
+  font-weight: 900;
+  max-width: 484px;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .place-gales__title {
+    font-size: 42px;
+    line-height: 46px;
+    max-width: 340px;
+    margin: 21px 0 22px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place-gales__title {
+    font-size: 32px;
+    max-width: 288px;
+    max-height: 35px;
+    margin: 0 auto;
+  }
+}
+
+.place-gales__subtitle {
+  grid-area: subtitle;
+  margin: 85px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .place-gales__subtitle {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place-gales__subtitle {
+    max-width: 288px;
+    max-height: 89px;
+    padding: 30px 0 30px;
+    margin: 0 auto;
+  }
+}
+
+.place-gales__subtitle-artist {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.place-gales__subtitle-editor {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 8px 0 0;
+}
+
+.place-gales__subtitle-director {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  max-width: 456px;
+}
+
+@media screen and (max-width: 768px) {
+  .place-gales__subtitle-director {
+    line-height: 22px;
+    margin: 0 0 24px;
+    max-width: 352px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place-gales__subtitle-director {
+    max-width: 288px;
+  }
+}
+
+.place-gales__image {
+  grid-area: image;
+  max-width: 460px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .place-gales__image {
+    max-width: 340px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place-gales__image {
+    max-width: 320px;
+  }
+}
+
+.place-gales__paragraph {
+  grid-area: paragraph;
+  max-width: 484px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .place-gales__paragraph {
+    max-width: 352px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place-gales__paragraph {
+    max-width: 288px;
+    margin: 0 auto;
+  }
+}
+
+.place-gales__paragraph-up {
+  color: white;
+  font-size: 18px;
+  line-height: 29.34px;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .place-gales__paragraph-up {
+    font-size: 16px;
+    line-height: 26.08px;
+  }
+}
+
+.place-gales__paragraph-down {
+  color: white;
+  font-size: 18px;
+  line-height: 29.34px;
+  font-weight: 400;
+  margin: 56px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .place-gales__paragraph-down {
+    font-size: 16px;
+    line-height: 26.08px;
+    margin: 25px 0 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place-gales__paragraph-down {
+    margin: 10px 0 7px;
+  }
+}
+
+.place-gales__button-content {
+  width: 355px;
+  height: 48px;
+  margin: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .place-gales__button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 288px;
+    margin: 0 auto;
+  }
+}
+
+.place-gales__button-background {
+  grid-area: button;
+  border-radius: 4px;
+  max-width: 355px;
+  margin: 0;
+  width: 355px;
+  height: 48px;
+  cursor: pointer;
+  background-color: #0278fe;
+  border: none;
+}
+
+@media screen and (max-width: 320px) {
+  .place-gales__button-background {
+    max-width: 288px;
+    margin: 0 auto;
+    width: 288px;
+  }
+}
+
+.place-gales__button-background:hover {
+  background-color: #0063d2;
+}
+
+.place-gales__button-paragraph {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .place-gales__button-paragraph {
+    font-size: 14px;
+    max-width: 245px;
+    max-height: 17px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: normal;
+  src: url(./fonts/Inter-Regular.woff2) format("woff2"),
+    url(./fonts/Inter-Regular.ttf) format("truetype"),
+    url(./fonts/Inter-Regular.otf) format("opentype");
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: bold;
+  src: url(./fonts/Inter-SemiBold.woff2) format("woff2"),
+    url(./fonts/Inter-SemiBold.ttf) format("truetype"),
+    url(./fonts/Inter-SemiBold.otf) format("opentype");
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: bolder;
+  src: url(./fonts/Inter-Black.woff2) format("woff2"),
+    url(./fonts/Inter-Black.ttf) format("truetype"),
+    url(./fonts/Inter-Black.otf) format("opentype");
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
