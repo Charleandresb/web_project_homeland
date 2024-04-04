@@ -1,132 +1,122 @@
 .cover {
-    padding: 92px 0 92px;
-    width: 1184px;
-    height: 740px;
-    margin: auto;
-    position: relative;
-  }
+  padding: 92px 0 92px;
+  width: 1184px;
+  height: 740px;
+  margin: auto;
+  position: relative;
+}
 
-  @media screen and (max-width: 768px) {
-    .cover {
-      padding: 92px 0 88px;
-      width: 768px;
-      height: 746px;
-    }
+@media screen and (max-width: 768px) {
+  .cover {
+    padding: 92px 0 88px;
+    width: 768px;
+    height: 746px;
   }
+}
 
-  @media screen and (max-width: 320px) {
-    .cover {
-      width: 321.26px;
-      height: 254px;
-      padding: 64px 0 64px;
-    }
+@media screen and (max-width: 320px) {
+  .cover {
+    width: 321.26px;
+    height: 254px;
+    padding: 64px 0 64px;
   }
+}
 
+.cover-visit {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 1184px;
+  height: 740px;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
   .cover-visit {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 1184px;
-    height: 740px;
-    margin: auto;
+    width: 768px;
+    height: 746px;
   }
+}
 
-  @media screen and (max-width: 768px) {
-    .cover-visit {
-      width: 768px;
-      height: 746px;
-    }
+@media screen and (max-width: 320px) {
+  .cover-visit {
+    width: 321.26px;
+    height: 254px;
   }
+}
 
-  @media screen and (max-width: 320px) {
-    .cover-visit {
-      width: 321.26px;
-      height: 254px;
-    }
-  }
+.cover-visit__background {
+  position: absolute;
+}
 
+@media screen and (max-width: 320px) {
   .cover-visit__background {
-    position: absolute;
+    width: 321.26px;
+    height: 254px;
   }
+}
 
-  @media screen and (max-width: 320px) {
-    .cover-visit__background {
-      width: 321.26px;
-      height: 254px;
-    }
-  }
+.cover-visit__background:hover {
+  opacity: 0.3;
+}
 
-  .cover-visit__background:hover {
-    opacity: 0.3;
-  }
+.cover-visit__title {
+  color: white;
+  font-size: 72px;
+  line-height: 76px;
+  font-weight: 900;
+  margin: 0;
+  z-index: 1;
+}
 
+@media screen and (max-width: 320px) {
   .cover-visit__title {
-    color: white;
-    font-size: 72px;
-    line-height: 76px;
-    font-weight: 900;
-    margin: 0;
-    z-index: 1;
+    font-size: 32px;
+    line-height: 35px;
+    max-width: 288px;
   }
+}
 
-  @media screen and (max-width: 320px) {
-    .cover-visit__title {
-      font-size: 32px;
-      line-height: 35px;
-      max-width: 288px;
-    }
-  }
+.cover-visit__subtitle {
+  color: white;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  max-width: 280px;
+  text-align: center;
+  margin: 32px 0 32px;
+  z-index: 1;
+}
 
+@media screen and (max-width: 320px) {
   .cover-visit__subtitle {
-    color: white;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 400;
-    max-width: 280px;
-    text-align: center;
-    margin: 32px 0 32px;
-    z-index: 1;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 16px 0 16px;
   }
+}
 
-  @media screen and (max-width: 320px) {
-    .cover-visit__subtitle {
-      font-size: 14px;
-      line-height: 16px;
-      margin: 16px 0 16px;
-    }
-  }
+.cover-visit__subtitle-paragraph {
+  display: block;
+}
 
-  .cover-visit__subtitle-paragraph {
-    display: block;
-  }
+.cover-visit__button {
+  border-radius: 4px;
+  background-color: #0278fe;
+  color: white;
+  padding: 13px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  z-index: 1;
+}
 
-  .cover-visit__button-content {
-    z-index: 1;
-  }
+.cover-visit__button:hover {
+  background-color: #0063d2;
+}
 
-  .cover-visit__button-background {
-    border-radius: 4px;
-    max-width: 198px;
-    margin: 0;
-    width: 198px;
-    height: 48px;
-    cursor: pointer;
-    background-color: #0278fe;
-    border: none;
-  }
-
-  .cover-visit__button-background:hover {
-    background-color: #0063d2;
-  }
-
-  .cover-visit__button-paragraph {
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0;
-  }
-
-  .cover-visit__button-content:hover ~ .cover-visit__background {
-    opacity: 0.3;
-  }
+.cover-visit__button:hover ~ .cover-visit__background {
+  opacity: 0.3;
+}

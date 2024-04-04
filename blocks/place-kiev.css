@@ -6,7 +6,7 @@
     "button . ";
   padding: 92px 0 0;
   width: 984px;
-  height: 756px;
+  height: 760px;
   gap: 48px 40px;
   margin: auto;
 }
@@ -31,7 +31,7 @@
     display: block;
     padding: 62px 0 0;
     width: 320px;
-    height: 1169px;
+    height: 1173px;
   }
 }
 
@@ -186,59 +186,36 @@
   }
 }
 
-.place-kiev__button-content {
-  width: 355px;
-  height: 48px;
-  margin: 0;
-}
-
-@media screen and (max-width: 320px) {
-  .place-kiev__button-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    width: 288px;
-    margin: 0 auto;
-  }
-}
-
-.place-kiev__button-background {
+.place-kiev__button {
   grid-area: button;
   border-radius: 4px;
-  max-width: 355px;
-  margin: 0;
-  width: 355px;
-  height: 48px;
-  cursor: pointer;
   background-color: #0278fe;
-  border: none;
-}
-
-@media screen and (max-width: 320px) {
-  .place-kiev__button-background {
-    max-width: 288px;
-    margin: 0 auto;
-    width: 288px;
-  }
-}
-
-.place-kiev__button-background:hover {
-  background-color: #0063d2;
-}
-
-.place-kiev__button-paragraph {
   color: white;
+  padding: 13px 20px;
+  text-decoration: none;
   font-size: 18px;
   font-weight: 600;
   margin: 0;
+  width: 315px;
+}
+
+@media screen and (max-width: 768px) {
+  .place-kiev__button {
+    height: 22px;
+  }
 }
 
 @media screen and (max-width: 320px) {
-  .place-kiev__button-paragraph {
+  .place-kiev__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
-    max-width: 245px;
-    max-height: 17px;
+    width: 248px;
     margin: 0 auto;
   }
+}
+
+.place-kiev__button:hover {
+  background-color: #0063d2;
 }
