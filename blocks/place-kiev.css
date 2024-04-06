@@ -11,12 +11,22 @@
   margin: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1020px) {
   .place-kiev {
     grid-template-areas:
       "title subtitle"
       "image paragraph"
       "button paragraph";
+    width: 784px;
+    height: 805px;
+    margin: 0 auto;
+    grid-template-columns: 357px 387px;
+    grid-template-rows: auto 357px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place-kiev {
     padding: 88px 0 0;
     width: 720px;
     height: 600px;
@@ -26,10 +36,29 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 720px) {
+  .place-kiev {
+    width: 620px;
+    height: 715px;
+    gap: 38px 28px;
+    grid-template-columns: 280px 310px;
+    grid-template-rows: auto 280px auto;
+  }
+}
+
+@media screen and (max-width: 615px) {
   .place-kiev {
     display: block;
     padding: 62px 0 0;
+    width: 444px;
+    height: 1040px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place-kiev {
+    /* display: block;
+    padding: 62px 0 0; */
     width: 320px;
     height: 1173px;
   }
@@ -45,6 +74,13 @@
   margin: 0;
 }
 
+@media screen and (max-width: 1020px) {
+  .place-kiev__title {
+    max-height: 145px;
+    margin-top: 25px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .place-kiev__title {
     font-size: 42px;
@@ -52,6 +88,21 @@
     max-width: 340px;
     max-height: 46px;
     margin: 0 0 46px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .place-kiev__title {
+    max-width: 280px;
+    max-height: 46px;
+    margin: 30px 0 0;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .place-kiev__title {
+    max-width: 444px;
+    margin: 15px 0;
   }
 }
 
@@ -73,6 +124,20 @@
   .place-kiev__subtitle {
     margin: 0 0 24px;
     max-height: 67px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .place-kiev__subtitle {
+    margin: 10px 0 0;
+    max-height: 60px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .place-kiev__subtitle {
+    max-width: 444px;
+    margin: 10px 0;
   }
 }
 
@@ -105,6 +170,18 @@
   }
 }
 
+@media screen and (max-width: 720px) {
+  .place-kiev__subtitle-name {
+    max-height: 39px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .place-kiev__subtitle-name {
+    max-width: 444px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .place-kiev__subtitle-name {
     line-height: 22px;
@@ -125,6 +202,13 @@
   }
 }
 
+@media screen and (max-width: 615px) {
+  .place-kiev__image {
+    max-width: 444px;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .place-kiev__image {
     max-width: 320px;
@@ -136,15 +220,37 @@
   max-width: 484px;
 }
 
+@media screen and (max-width: 1020px) {
+  .place-kiev__paragraph {
+    grid-row: 2/4;
+    max-height: 583px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .place-kiev__paragraph {
     max-width: 352px;
   }
 }
 
+@media screen and (max-width: 720px) {
+  .place-kiev__paragraph {
+    max-width: 310px;
+    max-height: 622px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .place-kiev__paragraph {
+    max-width: 444px;
+    margin: 10px 0 0;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .place-kiev__paragraph {
     max-width: 288px;
+    max-height: 783px;
     margin: 0 auto;
   }
 }
@@ -180,6 +286,18 @@
   }
 }
 
+@media screen and (max-width: 720px) {
+  .place-kiev__paragraph-down {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .place-kiev__paragraph-down {
+    margin: 10px 0;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .place-kiev__paragraph-down {
     margin: 7px 0 8px;
@@ -199,9 +317,25 @@
   width: 315px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1020px) {
   .place-kiev__button {
     height: 22px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .place-kiev__button {
+    width: 245px;
+    height: 17px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .place-kiev__button {
+    display: flex;
+    justify-content: left;
+    width: 246px;
   }
 }
 
